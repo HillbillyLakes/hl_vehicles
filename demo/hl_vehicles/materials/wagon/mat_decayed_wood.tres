@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d32dtxgdwrcpk"]
+
+[ext_resource type="Texture2D" uid="uid://dgt0352vjj7j5" path="res://demo/hl_vehicles/materials/wagon/old_wood_diff.jpg" id="1_muypu"]
+
+[resource]
+resource_name = "DecayWood01_jpg"
+cull_mode = 2
+albedo_texture = ExtResource("1_muypu")
+normal_enabled = true

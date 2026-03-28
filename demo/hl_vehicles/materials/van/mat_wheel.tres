@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://pke5akrrlxjc"]
+
+[ext_resource type="Texture2D" uid="uid://bbdayea2racsc" path="res://demo/hl_vehicles/materials/van/wheel_diff.png" id="1_6es23"]
+
+[resource]
+resource_name = "WheelMat"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_6es23")

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://crupl1q4tsfy2"]
+
+[ext_resource type="Texture2D" uid="uid://cwo6ofglita12" path="res://demo/hl_vehicles/materials/wagon/metal_diff.jpg" id="1_drodu"]
+
+[resource]
+resource_name = "Metal_19_jpg"
+cull_mode = 2
+albedo_texture = ExtResource("1_drodu")
+metallic = 0.76
+normal_enabled = true

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cutkd4ox2g7cv"]
+
+[ext_resource type="Texture2D" uid="uid://pbcqwp0gglly" path="res://demo/hl_vehicles/materials/van/body_orange_diff.png" id="1_r7mbs"]
+
+[resource]
+resource_name = "UazMat"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_r7mbs")
+emission_enabled = true

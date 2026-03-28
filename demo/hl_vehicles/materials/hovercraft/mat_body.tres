@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c8j1cacjalsnc"]
+
+[ext_resource type="Texture2D" uid="uid://cjr7jdr7750oc" path="res://demo/hl_vehicles/materials/hovercraft/body_diff.png" id="1_kl6gc"]
+
+[resource]
+albedo_texture = ExtResource("1_kl6gc")

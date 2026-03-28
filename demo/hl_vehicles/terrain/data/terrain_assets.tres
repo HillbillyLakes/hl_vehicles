@@ -1,0 +1,58 @@
+[gd_resource type="Terrain3DAssets" format=3 uid="uid://b77ekja11mwi6"]
+
+[ext_resource type="Texture2D" uid="uid://sipibyfnsp25" path="res://demo/hl_vehicles/terrain/textures/packed_gravelly_sand_albedo_height.png" id="1_2thse"]
+[ext_resource type="Texture2D" uid="uid://dr0e6k77ym8rv" path="res://demo/hl_vehicles/terrain/textures/packed_gravelly_sand_normal_roughness.png" id="2_0ikmq"]
+[ext_resource type="Texture2D" uid="uid://cu2787kvj8iai" path="res://demo/hl_vehicles/terrain/textures/packed_cliff_side_albedo_height.png" id="3_dirfy"]
+[ext_resource type="Texture2D" uid="uid://bdvothe4vce1f" path="res://demo/hl_vehicles/terrain/textures/packed_cliff_side_normal_roughness.png" id="4_koity"]
+[ext_resource type="Texture2D" uid="uid://chkniw4guhuml" path="res://demo/hl_vehicles/terrain/textures/packed_rock_face_albedo_height.png" id="5_q87w7"]
+[ext_resource type="Texture2D" uid="uid://b0bbfuhd34mju" path="res://demo/hl_vehicles/terrain/textures/packed_rock_face_normal_roughness.png" id="6_xppio"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vw27"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 128.0
+distance_fade_max_distance = 96.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_kek77"]
+generated_type = 1
+height_offset = 0.5
+material_override = SubResource("StandardMaterial3D_5vw27")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_q6m73"]
+name = "packed_sandy_gravel_albedo_height"
+albedo_texture = ExtResource("1_2thse")
+normal_texture = ExtResource("2_0ikmq")
+detiling_rotation = 0.3
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6e1al"]
+name = "packed_gravelly_sand_albedo_height"
+id = 1
+albedo_color = Color(0.9372549, 0.9372549, 0.9372549, 1)
+albedo_texture = ExtResource("1_2thse")
+normal_texture = ExtResource("2_0ikmq")
+uv_scale = 0.2
+detiling_rotation = 0.3
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_h8jc8"]
+name = "packed_rock_face_albedo_height"
+id = 2
+albedo_texture = ExtResource("3_dirfy")
+normal_texture = ExtResource("4_koity")
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_joh7e"]
+name = "packed_rock_face_albedo_height"
+id = 3
+albedo_texture = ExtResource("5_q87w7")
+normal_texture = ExtResource("6_xppio")
+detiling_rotation = 0.3
+
+[resource]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_kek77")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_q6m73"), SubResource("Terrain3DTextureAsset_6e1al"), SubResource("Terrain3DTextureAsset_h8jc8"), SubResource("Terrain3DTextureAsset_joh7e")])

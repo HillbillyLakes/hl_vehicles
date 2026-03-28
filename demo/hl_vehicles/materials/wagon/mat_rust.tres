@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bsxk7vpj0qj68"]
+
+[ext_resource type="Texture2D" uid="uid://c2j7ap8uw2cl5" path="res://demo/hl_vehicles/materials/wagon/rust_diff.jpg" id="1_r3i85"]
+[ext_resource type="Texture2D" uid="uid://cl0d0f3oss5r5" path="res://demo/hl_vehicles/materials/wagon/rust_normal.png" id="2_t2weo"]
+
+[resource]
+resource_name = "Rusty01_jpg"
+cull_mode = 2
+albedo_texture = ExtResource("1_r3i85")
+metallic = 0.5
+roughness = 0.92
+normal_enabled = true
+normal_scale = 0.33
+normal_texture = ExtResource("2_t2weo")

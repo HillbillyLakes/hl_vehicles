@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://i5y78c6ji8gy"]
+
+[ext_resource type="Texture2D" uid="uid://c6oikxexx2f7j" path="res://demo/hl_vehicles/materials/wagon/wood_planks_diff.jpg" id="1_750c0"]
+[ext_resource type="Texture2D" uid="uid://c4wmnuom2pkhl" path="res://demo/hl_vehicles/materials/wagon/wood_planks_normal.png" id="2_yb6sp"]
+
+[resource]
+resource_name = "Wood_23_jpg"
+cull_mode = 2
+albedo_color = Color(0.96038765, 0.8337586, 0.71848094, 1)
+albedo_texture = ExtResource("1_750c0")
+normal_enabled = true
+normal_scale = -0.25
+normal_texture = ExtResource("2_yb6sp")
+uv1_triplanar = true
