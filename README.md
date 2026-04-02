@@ -4,7 +4,7 @@ HLVehicles provides a component-based approach to vehicles in Godot. Things like
 transmission, axles, wheels, and other things that make a vehicles are represented in the scene tree
 by individual components.
 
-The demo scene uses other add-ons and CCO/CC-By 3.0 assets for the purpose of demonstrating usage of this add-on.
+The demo scene uses other MIT add-ons and CCO/CC-By 3.0 assets for the purpose of demonstrating usage of this add-on.
 
 Current features:
 * Independent suspension
