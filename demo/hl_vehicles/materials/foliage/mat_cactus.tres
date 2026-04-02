@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://hnwaxdxvsryj"]
+
+[ext_resource type="Texture2D" uid="uid://c67qdikcivr4i" path="res://demo/hl_vehicles/materials/foliage/cactus_diff.png" id="1_jmrnj"]
+[ext_resource type="Texture2D" uid="uid://b0wt11fwq8p45" path="res://demo/hl_vehicles/materials/foliage/cactus_normal.png" id="2_awon4"]
+[ext_resource type="Texture2D" uid="uid://ds5s182q6ydad" path="res://demo/hl_vehicles/materials/foliage/cactus_roughness.png" id="3_hxv0l"]
+
+[resource]
+albedo_color = Color(0.9464913, 0.988092, 0.89186, 1)
+albedo_texture = ExtResource("1_jmrnj")
+roughness_texture = ExtResource("3_hxv0l")
+normal_enabled = true
+normal_texture = ExtResource("2_awon4")

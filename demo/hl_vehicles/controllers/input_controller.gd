@@ -7,6 +7,7 @@ static func get_instance() -> InputController:
 
 @export var vehicle: HLVehicle
 @export var terrain: Terrain3D
+@export var sky: Sky3D
 @export var camera_controller: Node3D
 @export var camera_rotator: Node3D
 
@@ -21,6 +22,25 @@ func _process(_delta: float) -> void:
 
 	if Input.is_action_just_pressed("ui_cancel"):
 		MenuController.get_instance().toggle_menu()
+		
+	if Input.is_action_just_pressed("toggle_time"):
+		if sky.enable_game_time:
+			sky.enable_game_time = false
+		else:
+			sky.enable_game_time = true
+		
+	if Input.is_action_just_pressed("skip_time"):
+		var current_time = sky.current_time
+		current_time += 1.0
+		if current_time > 24.0:
+			current_time -= 24.0
+		sky.current_time = current_time
+
+	if Input.is_action_just_pressed("toggle_fullscreen"):
+		if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		else:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	
 	if Input.is_action_just_pressed("toggle_info"):
 		InfoController.get_instance().visible = !InfoController.get_instance().visible

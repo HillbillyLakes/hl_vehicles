@@ -29,6 +29,7 @@ lod0_range = 128.0
 name = "packed_sandy_gravel_albedo_height"
 albedo_texture = ExtResource("1_2thse")
 normal_texture = ExtResource("2_0ikmq")
+roughness = 0.5
 detiling_rotation = 0.3
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_6e1al"]
@@ -37,6 +38,7 @@ id = 1
 albedo_color = Color(0.9372549, 0.9372549, 0.9372549, 1)
 albedo_texture = ExtResource("1_2thse")
 normal_texture = ExtResource("2_0ikmq")
+roughness = 0.5
 uv_scale = 0.2
 detiling_rotation = 0.3
 
@@ -45,12 +47,14 @@ name = "packed_rock_face_albedo_height"
 id = 2
 albedo_texture = ExtResource("3_dirfy")
 normal_texture = ExtResource("4_koity")
+roughness = 0.25
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_joh7e"]
 name = "packed_rock_face_albedo_height"
 id = 3
 albedo_texture = ExtResource("5_q87w7")
 normal_texture = ExtResource("6_xppio")
+roughness = 0.25
 detiling_rotation = 0.3
 
 [resource]

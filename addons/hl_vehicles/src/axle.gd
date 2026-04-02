@@ -18,6 +18,12 @@ const REAR: int = 1
 @export var left_wheel: HLSuspension
 @export var right_wheel: HLSuspension
 
+@export_group("Mesh")
+## Mesh for the axle. Currently, the origin for the mesh should be at one end of
+## the axle and be placed near the left wheel. This mesh will be pointed at the
+## other wheel to keep it lined up betwen the wheels. This might change later.
+@export var mesh_node: Node3D
+
 # Just a reference to the vehicle.
 var vehicle: HLVehicle
 
@@ -29,3 +35,9 @@ var contact_wheels: int = 0
 func _enter_tree() -> void:
 
 	vehicle = HLVehicle.find_vehicle(10, self)
+
+func _process(delta: float) -> void:
+	
+	if mesh_node != null:
+		mesh_node.global_position = left_wheel.wheel.global_position
+		mesh_node.look_at(right_wheel.wheel.global_position)

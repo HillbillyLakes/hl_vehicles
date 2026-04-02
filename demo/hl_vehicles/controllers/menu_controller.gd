@@ -61,7 +61,6 @@ func _on_spawn_hover_button_pressed() -> void:
 	
 	toggle_menu()
 
-
 func _on_spawn_wagon_button_pressed() -> void:
 
 	for child in vehicle_node.get_children():

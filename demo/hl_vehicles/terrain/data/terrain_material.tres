@@ -50,6 +50,5 @@ _shader_parameters = {
 &"tri_scale_reduction": 0.3
 }
 world_background = 0
-texture_filtering = 1
 auto_shader = true
 dual_scaling = true

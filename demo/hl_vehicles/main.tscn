@@ -3,12 +3,17 @@
 [ext_resource type="Terrain3DMaterial" uid="uid://b4qtk3ghbhaq7" path="res://demo/hl_vehicles/terrain/data/terrain_material.tres" id="1_7hs16"]
 [ext_resource type="Terrain3DAssets" uid="uid://b77ekja11mwi6" path="res://demo/hl_vehicles/terrain/data/terrain_assets.tres" id="2_1uank"]
 [ext_resource type="Script" uid="uid://c6lj01nuiy58c" path="res://addons/sky_3d/src/Sky3D.gd" id="3_ajbjx"]
+[ext_resource type="Script" uid="uid://dbndw8p05yam7" path="res://addons/terrain_3d/utils/terrain_3d_objects.gd" id="3_bblba"]
 [ext_resource type="Script" uid="uid://coqx4g142p1qg" path="res://addons/sky_3d/src/TimeOfDay.gd" id="4_bblba"]
+[ext_resource type="PackedScene" uid="uid://b6e4ye4bgn3yx" path="res://demo/hl_vehicles/terrain/decor/desert_rock.tscn" id="5_381w0"]
 [ext_resource type="Script" uid="uid://d0i5e2cquhtku" path="res://addons/sky_3d/src/Skydome.gd" id="5_ngftd"]
 [ext_resource type="Script" uid="uid://dmemxx71wra3c" path="res://demo/hl_vehicles/controllers/input_controller.gd" id="6_7hs16"]
 [ext_resource type="Script" uid="uid://cqafhb41kodoa" path="res://demo/hl_vehicles/controllers/camera_tracker.gd" id="7_1uank"]
 [ext_resource type="Script" uid="uid://cb3fswh2p1ssg" path="res://demo/hl_vehicles/controllers/info_controller.gd" id="8_ow0sx"]
+[ext_resource type="PackedScene" uid="uid://bokk6emxgchce" path="res://demo/hl_vehicles/terrain/foliage/cactus.tscn" id="10_ajbjx"]
 [ext_resource type="Script" uid="uid://nslx8wymwn0" path="res://demo/hl_vehicles/controllers/menu_controller.gd" id="11_bblba"]
+[ext_resource type="Script" uid="uid://c3a0ky348t4p3" path="res://addons/hl_materials/src/wind_controller.gd" id="13_381w0"]
+[ext_resource type="PackedScene" uid="uid://vnxt05tr4wev" path="res://demo/hl_vehicles/terrain/foliage/ground_foliage.tscn" id="14_bxovf"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_ycdy4"]
 use_debanding = false
@@ -22,8 +27,9 @@ sky = SubResource("Sky_w48qg")
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 reflected_light_source = 2
-tonemap_mode = 3
+tonemap_mode = 4
 tonemap_white = 6.0
+ssil_enabled = true
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_2cqfq"]
 
@@ -50,6 +56,172 @@ collision_mask = 3
 top_level = true
 metadata/_edit_lock_ = true
 
+[node name="Terrain3DObjects" type="Node3D" parent="Terrain3D" unique_id=858701887]
+script = ExtResource("3_bblba")
+metadata/_custom_type_script = "uid://dbndw8p05yam7"
+
+[node name="TallCactus1" parent="Terrain3D/Terrain3DObjects" unique_id=130044794 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.15085803, 0, -1.0933185, 0, 1.1036773, 0, 1.0933185, 0, 0.15085803, -312.63748, 9.500409, 1011.0284)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus12" parent="Terrain3D/Terrain3DObjects" unique_id=1390513564 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-1.3000597, 0, -0.27023348, 0, 1.3278483, 0, 0.27023348, 0, -1.3000597, -265.13623, 7.866798, 1007.18646)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus13" parent="Terrain3D/Terrain3DObjects" unique_id=842859164 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.48744357, 0, -1.1242537, 0, 1.2253766, 0, 1.1242537, 0, 0.48744357, -246.12805, 7.8667974, 996.4931)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus14" parent="Terrain3D/Terrain3DObjects" unique_id=653875356 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.25172555, 0, -1.1192437, 0, 1.147202, 0, 1.1192437, 0, 0.25172555, -245.54018, 7.866798, 1020.05707)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus15" parent="Terrain3D/Terrain3DObjects" unique_id=1602281484 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(1.013902, 0, 0.6062781, 0, 1.1813426, 0, -0.6062781, 0, 1.013902, -262.1707, 7.866798, 1028.1833)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus2" parent="Terrain3D/Terrain3DObjects" unique_id=10078570 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.6231256, 0, -0.7873326, 0, 1.0040808, 0, 0.7873326, 0, -0.6231256, -220.78085, 7.9824862, 886.45355)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus3" parent="Terrain3D/Terrain3DObjects" unique_id=1350812703 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.9335841, 0, 0.64524287, 0, 1.1348646, 0, -0.64524287, 0, -0.9335841, -232.42767, 7.835659, 1007.42755)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus4" parent="Terrain3D/Terrain3DObjects" unique_id=1935722156 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.97954035, 0, 0.27542078, 0, 1.0175244, 0, -0.27542078, 0, 0.97954035, -338.42398, 10.576241, 950.6716)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus5" parent="Terrain3D/Terrain3DObjects" unique_id=307141830 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.009864695, 0, -1.3382946, 0, 1.338331, 0, 1.3382946, 0, 0.009864695, -562.25793, 12.773527, 780.69415)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus6" parent="Terrain3D/Terrain3DObjects" unique_id=727521379 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.28010625, 0, -1.0935625, 0, 1.128866, 0, 1.0935625, 0, 0.28010625, -607.98376, 12.232425, 387.4021)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus7" parent="Terrain3D/Terrain3DObjects" unique_id=628283886 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.38794547, 0, 1.2093937, 0, 1.2700925, 0, -1.2093937, 0, -0.38794547, -15.646362, 6.2247143, 657.484)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus8" parent="Terrain3D/Terrain3DObjects" unique_id=1477995783 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.98127985, 0, 0.90822405, 0, 1.3370793, 0, -0.90822405, 0, -0.98127985, 11.503433, 6.278597, 941.5108)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus9" parent="Terrain3D/Terrain3DObjects" unique_id=1442609515 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.40752602, 0, -1.0357895, 0, 1.1130756, 0, 1.0357895, 0, -0.40752602, -300.3169, 11.356724, 1186.2813)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus10" parent="Terrain3D/Terrain3DObjects" unique_id=1721915780 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.54973835, 0, -0.91563255, 0, 1.0679865, 0, 0.91563255, 0, 0.54973835, -97.612274, 10.266341, 1133.2589)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="TallCactus11" parent="Terrain3D/Terrain3DObjects" unique_id=2007841346 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-1.0633323, 0, -0.0064002373, 0, 1.0633516, 0, 0.0064002373, 0, -1.0633323, 275.5601, 6.6767483, 700.7885)
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="MediumCactus1" parent="Terrain3D/Terrain3DObjects" unique_id=457657960 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.91709596, 0, -0.81299436, 0, 1.2255713, 0, 0.81299436, 0, -0.91709596, -234.06744, 7.814184, 964.0591)
+size = 1
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="MediumCactus2" parent="Terrain3D/Terrain3DObjects" unique_id=1221893030 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(1.2256823, 0, 0.40689772, 0, 1.2914577, 0, -0.40689772, 0, 1.2256823, -298.65488, 9.231609, 893.99744)
+size = 1
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="MediumCactus3" parent="Terrain3D/Terrain3DObjects" unique_id=327793839 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.28005177, 0, 0.9711057, 0, 1.0106806, 0, -0.9711057, 0, 0.28005177, -65.47101, 6.2055445, 730.93494)
+size = 1
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="MediumCactus4" parent="Terrain3D/Terrain3DObjects" unique_id=1851710322 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.9713584, 0, 0.69047076, 0, 1.1917579, 0, -0.69047076, 0, -0.9713584, -67.2513, 8.589862, 349.292)
+size = 1
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="ShortCactus1" parent="Terrain3D/Terrain3DObjects" unique_id=1006103030 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-1.1819954, 0, -0.050989933, 0, 1.1830947, 0, 0.050989933, 0, -1.1819954, -170.05568, 7.2216296, 924.2781)
+size = 2
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="ShortCactus2" parent="Terrain3D/Terrain3DObjects" unique_id=2142516722 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(0.3082939, 0, 1.3097605, 0, 1.3455548, 0, -1.3097605, 0, 0.3082939, -335.07016, 8.481087, 511.5995)
+size = 2
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="ShortCactus3" parent="Terrain3D/Terrain3DObjects" unique_id=1994740086 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.2878818, 0, -0.99952996, 0, 1.0401616, 0, 0.99952996, 0, -0.2878818, -146.17404, 8.702746, 124.69745)
+size = 2
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="ShortCactus4" parent="Terrain3D/Terrain3DObjects" unique_id=803130299 instance=ExtResource("10_ajbjx")]
+transform = Transform3D(-0.65936667, 0, 0.7855423, 0, 1.025593, 0, -0.7855423, 0, -0.65936667, -607.9372, 12.42334, 371.6142)
+size = 2
+arm_amount = 0.7
+scale_max = 1.4
+
+[node name="DesertRock1" parent="Terrain3D/Terrain3DObjects" unique_id=732980481 instance=ExtResource("5_381w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -267.10568, 7.955207, 999.77454)
+
+[node name="DesertRock4" parent="Terrain3D/Terrain3DObjects" unique_id=2080096661 instance=ExtResource("5_381w0")]
+transform = Transform3D(1, 0, 0, 0, 0.99276364, -0.12008486, 0, 0.12008486, 0.99276364, -246.83873, 7.955207, 1023.349)
+
+[node name="DesertRock2" parent="Terrain3D/Terrain3DObjects" unique_id=584317656 instance=ExtResource("5_381w0")]
+transform = Transform3D(-0.86966866, 0.86914957, -1.7085899, -0.39426124, -1.9171863, -0.7745832, -1.8759687, 0, 0.95486414, -270.4225, 8.316721, 1003.8325)
+
+[node name="DesertRock6" parent="Terrain3D/Terrain3DObjects" unique_id=297427943 instance=ExtResource("5_381w0")]
+transform = Transform3D(-0.22050506, 0.82302386, -1.9248463, -0.39426124, -1.9171863, -0.77458316, -2.055957, 0.27937895, 0.35498142, -259.18082, 8.316722, 1031.4392)
+
+[node name="DesertRock3" parent="Terrain3D/Terrain3DObjects" unique_id=1373562849 instance=ExtResource("5_381w0")]
+transform = Transform3D(0.9334681, -0.44311476, 1.8339331, 0.20100455, 2.0578322, 0.39490244, -1.8759687, 2.85683e-08, 0.95486414, -244.06792, 8.083329, 1015.2682)
+
+[node name="DesertRock5" parent="Terrain3D/Terrain3DObjects" unique_id=2122582213 instance=ExtResource("5_381w0")]
+transform = Transform3D(-0.53151315, 0.8427955, -4.1212597, -3.8823802, -1.6973889, 0.1535897, -1.6193253, 3.792909, 0.9844899, -255.01997, 8.56591, 1033.3335)
+
+[node name="GroundFoliage1" parent="Terrain3D/Terrain3DObjects" unique_id=135728784 instance=ExtResource("14_bxovf")]
+transform = Transform3D(0.23519304, 0, 0.9719487, 0, 1, 0, -0.9719487, 0, 0.23519304, -245.88817, 7.9101467, 1017.0304)
+
+[node name="GroundFoliage2" parent="Terrain3D/Terrain3DObjects" unique_id=1474807118 instance=ExtResource("14_bxovf")]
+transform = Transform3D(-1.0212715, 0, 0.31922522, 0, 1.07, 0, -0.31922522, 0, -1.0212715, -245.13411, 7.9101467, 1017.20325)
+
+[node name="GroundFoliage3" parent="Terrain3D/Terrain3DObjects" unique_id=1885717374 instance=ExtResource("14_bxovf")]
+transform = Transform3D(0.54045105, 0, -1.2261782, 0, 1.3400002, 0, 1.2261782, 0, 0.54045105, -256.73148, 7.9044456, 1030.1631)
+
+[node name="GroundFoliage5" parent="Terrain3D/Terrain3DObjects" unique_id=908819486 instance=ExtResource("14_bxovf")]
+transform = Transform3D(0.93035436, 0, 0.96438634, 0, 1.3400002, 0, -0.96438634, 0, 0.93035436, -250.9822, 7.8961787, 1027.1246)
+
+[node name="GroundFoliage6" parent="Terrain3D/Terrain3DObjects" unique_id=122952692 instance=ExtResource("14_bxovf")]
+transform = Transform3D(0.93035436, 0, 0.96438634, 0, 1.3400002, 0, -0.96438634, 0, 0.93035436, -268.93668, 7.8961787, 1001.4536)
+
+[node name="GroundFoliage7" parent="Terrain3D/Terrain3DObjects" unique_id=1400248383 instance=ExtResource("14_bxovf")]
+transform = Transform3D(0.93035436, 0, 0.96438634, 0, 1.3400002, 0, -0.96438634, 0, 0.93035436, -267.5645, 7.8961787, 1006.94147)
+
+[node name="GroundFoliage4" parent="Terrain3D/Terrain3DObjects" unique_id=1135832810 instance=ExtResource("14_bxovf")]
+transform = Transform3D(0.23519304, 0, 0.9719487, 0, 1, 0, -0.9719487, 0, 0.23519304, -245.66946, 7.9101467, 1020.50195)
+
 [node name="Sky3D" type="WorldEnvironment" parent="." unique_id=553268641]
 environment = SubResource("Environment_vivmo")
 camera_attributes = SubResource("CameraAttributesPractical_2cqfq")
@@ -57,14 +229,19 @@ script = ExtResource("3_ajbjx")
 enable_editor_time = false
 enable_game_time = false
 current_time = 11.253
+minutes_per_day = 10.0
+update_interval = 0.016
 metadata/_custom_type_script = "uid://c6lj01nuiy58c"
 
 [node name="SunLight" type="DirectionalLight3D" parent="Sky3D" unique_id=108676595]
 transform = Transform3D(0, -0.98975873, 0.14275138, -0.63394237, 0.11040111, 0.76545984, -0.77338034, -0.090496145, -0.6274499, 0.14275147, 0.76545984, -0.62744975)
 shadow_enabled = true
+directional_shadow_split_1 = 0.09
+directional_shadow_split_3 = 0.35
+directional_shadow_blend_splits = true
 
 [node name="MoonLight" type="DirectionalLight3D" parent="Sky3D" unique_id=410336895]
-transform = Transform3D(0, -0.4515238, 0.8922591, 0.9499598, 0.27871695, 0.14104348, -0.3123722, 0.8476103, 0.42892948, 0.89225906, 0.14104356, 0.42892948)
+transform = Transform3D(0, -0.45287272, 0.8915752, 0.98195183, 0.16862471, 0.085652374, -0.18913123, 0.87548393, 0.4446992, 0.89157516, 0.085652456, 0.4446992)
 visible = false
 light_color = Color(0.572549, 0.776471, 0.956863, 1)
 light_energy = 0.0
@@ -74,9 +251,10 @@ shadow_enabled = true
 script = ExtResource("4_bblba")
 update_in_game = false
 update_in_editor = false
+update_interval = 0.016
 dome_path = NodePath("../Skydome")
 system_sync = false
-total_cycle_in_minutes = 15.0
+total_cycle_in_minutes = 10.0
 total_hours = 11.253
 day = 1
 month = 1
@@ -179,7 +357,12 @@ clouds_cumulus_offset_speed = 0.005
 set_clouds_cumulus_texture = false
 environment = SubResource("Environment_vivmo")
 
-[node name="InfoViewController" type="Control" parent="." unique_id=226714590 node_paths=PackedStringArray("label")]
+[node name="HLWindController" type="Node3D" parent="." unique_id=1832161620]
+script = ExtResource("13_381w0")
+wind_direction = Vector3(1, 0.1, 0.1)
+metadata/_custom_type_script = "uid://c3a0ky348t4p3"
+
+[node name="InfoController" type="Control" parent="." unique_id=226714590 node_paths=PackedStringArray("label")]
 visible = false
 custom_minimum_size = Vector2(250, 400)
 layout_mode = 3
@@ -187,9 +370,9 @@ anchors_preset = 0
 offset_right = 250.0
 offset_bottom = 400.0
 script = ExtResource("8_ow0sx")
-label = NodePath("MarginContainer2/Panel/MarginContainer/Label")
+label = NodePath("MarginContainer/Panel/MarginContainer/Label")
 
-[node name="MarginContainer2" type="MarginContainer" parent="InfoViewController" unique_id=1450690213]
+[node name="MarginContainer" type="MarginContainer" parent="InfoController" unique_id=1450690213]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -203,10 +386,10 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="Panel" type="Panel" parent="InfoViewController/MarginContainer2" unique_id=458283023]
+[node name="Panel" type="Panel" parent="InfoController/MarginContainer" unique_id=458283023]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="InfoViewController/MarginContainer2/Panel" unique_id=1176888860]
+[node name="MarginContainer" type="MarginContainer" parent="InfoController/MarginContainer/Panel" unique_id=1176888860]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -215,7 +398,7 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
-[node name="Label" type="Label" parent="InfoViewController/MarginContainer2/Panel/MarginContainer" unique_id=1645005800]
+[node name="Label" type="Label" parent="InfoController/MarginContainer/Panel/MarginContainer" unique_id=1645005800]
 layout_mode = 2
 text = "Test"
 
@@ -300,9 +483,10 @@ text = "A hover craft with a top-speed of 500 MPH.
 Collision shape is a simple convex shape
 around the body. Buggy at high speeds."
 
-[node name="InputController" type="Node3D" parent="." unique_id=47287553 node_paths=PackedStringArray("terrain", "camera_controller", "camera_rotator")]
+[node name="InputController" type="Node3D" parent="." unique_id=47287553 node_paths=PackedStringArray("terrain", "sky", "camera_controller", "camera_rotator")]
 script = ExtResource("6_7hs16")
 terrain = NodePath("../Terrain3D")
+sky = NodePath("../Sky3D")
 camera_controller = NodePath("../CameraController")
 camera_rotator = NodePath("../CameraController/CameraRotator")
 

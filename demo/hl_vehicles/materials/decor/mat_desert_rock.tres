@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cqeydjhdy7ggj"]
+
+[ext_resource type="Texture2D" uid="uid://deafbylkwl1wn" path="res://demo/hl_vehicles/materials/decor/cliff_side_diff_2k.jpg" id="1_bsc77"]
+[ext_resource type="Texture2D" uid="uid://cf17wyhycuhu8" path="res://demo/hl_vehicles/materials/decor/cliff_side_normal_2k.jpg" id="2_q2u5w"]
+[ext_resource type="Texture2D" uid="uid://cyh8ot6exbqu6" path="res://demo/hl_vehicles/materials/decor/cliff_side_roughness_2k.jpg" id="3_x4w8i"]
+
+[resource]
+albedo_texture = ExtResource("1_bsc77")
+roughness_texture = ExtResource("3_x4w8i")
+normal_enabled = true
+normal_texture = ExtResource("2_q2u5w")
+uv1_scale = Vector3(0.585, 0.585, 0.585)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 7.4642596

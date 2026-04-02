@@ -1,0 +1,1 @@
+texture_uv = (texture_uv_scale != 1.0) ? UV * texture_uv_scale : UV;

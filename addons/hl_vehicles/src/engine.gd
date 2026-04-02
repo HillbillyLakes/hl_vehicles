@@ -30,6 +30,8 @@ class_name HLEngine extends Node3D
 @export var engine_start_sound: AudioStreamPlayer3D
 @export var engine_rev_sound: AudioStreamPlayer3D
 @export var mute_neutral: bool = false
+var engine_rev_pos: float = 0.0
+var engine_rev_max_db: float = 0.0
 
 ## Engine state is exported so it can be multiplayer synchronized.
 @export_group("Engine State")
@@ -55,6 +57,10 @@ var engine_rev_pitch: float = 1.0
 func _enter_tree() -> void:
 
 	vehicle = HLVehicle.find_vehicle(10, self)
+
+func _ready() -> void:
+	
+	engine_rev_max_db = engine_rev_sound.volume_db
 
 func _process(_delta: float) -> void:
 
@@ -342,7 +348,8 @@ func play_rev_audio(delta: float) -> void:
 	
 	if !engine_running or (mute_neutral and vehicle.transmission.current_gear == "N"):
 		if engine_rev_sound != null and engine_rev_sound.playing:
-			engine_rev_sound.stop()
+			#engine_rev_sound.stream_paused = true
+			engine_rev_sound.volume_db = lerp(engine_rev_sound.volume_db, -70.0, 5.0 * delta)
 		return
 
 	if engine_start_sound != null and engine_start_sound.playing:
@@ -367,6 +374,11 @@ func play_rev_audio(delta: float) -> void:
 		if engine_rev_sound != null:
 			engine_rev_sound.pitch_scale = engine_rev_pitch
 
+			#if engine_rev_sound.stream_paused:
+				#engine_rev_sound.stream_paused = false
+				
+			engine_rev_sound.volume_db = lerp(engine_rev_sound.volume_db, engine_rev_max_db, 2.0 * delta)
+			
 			if !engine_rev_sound.playing:
 				engine_rev_sound.play()
 	
@@ -383,6 +395,9 @@ func play_rev_audio(delta: float) -> void:
 
 			engine_rev_sound.pitch_scale = engine_rev_pitch
 
+			#if engine_rev_sound.stream_paused:
+				#engine_rev_sound.stream_paused = false
+			engine_rev_sound.volume_db = lerp(engine_rev_sound.volume_db, engine_rev_max_db, 2.0 * delta)
 			if !engine_rev_sound.playing:
 				engine_rev_sound.play()
 

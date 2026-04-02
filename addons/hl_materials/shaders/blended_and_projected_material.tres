@@ -1,0 +1,51 @@
+[gd_resource type="Shader" format=3 uid="uid://dbf54347cpl4x"]
+
+[resource]
+code = "/*
+Blended and Projected Material Shader
+*/
+shader_type spatial;
+
+render_mode cull_disabled, depth_prepass_alpha, diffuse_lambert_wrap;
+
+#include \"res://addons/hl_materials/includes/groups/general.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/triplanar.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/alpha.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/primary_albedo.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/primary_ormh.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/primary_normal.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/secondary_albedo.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/secondary_ormh.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/secondary_normal.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/projected_albedo.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/projected_ormh.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/projected_normal.gdshaderinc\"
+#include \"res://addons/hl_materials/includes/groups/projected_noise.gdshaderinc\"
+
+void vertex() {
+
+	#include \"res://addons/hl_materials/includes/vertex/triplanar.gdshaderinc\"
+	#include \"res://addons/hl_materials/includes/vertex/primary_texture.gdshaderinc\"
+	#include \"res://addons/hl_materials/includes/vertex/secondary_texture.gdshaderinc\"
+	#include \"res://addons/hl_materials/includes/vertex/projected_texture.gdshaderinc\"
+	#include \"res://addons/hl_materials/includes/vertex/spherical_normals.gdshaderinc\"
+
+}
+
+void fragment() {
+
+	#include \"res://addons/hl_materials/includes/fragments/primary_albedo.gdshaderinc\"
+	#include \"res://addons/hl_materials/includes/fragments/primary_ormh.gdshaderinc\"
+	#include \"res://addons/hl_materials/includes/fragments/primary_normal.gdshaderinc\"
+
+	if (distance(CAMERA_POSITION_WORLD, NODE_POSITION_WORLD) < secondary_texture_distance) {
+		#include \"res://addons/hl_materials/includes/fragments/secondary_albedo.gdshaderinc\"
+		#include \"res://addons/hl_materials/includes/fragments/secondary_normal.gdshaderinc\"
+		#include \"res://addons/hl_materials/includes/fragments/secondary_ormh.gdshaderinc\"
+	}
+
+	if (distance(CAMERA_POSITION_WORLD, NODE_POSITION_WORLD) < projected_texture_distance) {
+		#include \"res://addons/hl_materials/includes/fragments/projected_texture.gdshaderinc\"
+	}
+
+}"

@@ -1,3 +1,5 @@
+A lot of other peoples' work went into both this add-on
+and into add-ons/assets used in a scene for the purpose of this demo.
 
 A lot of the vehicle physics based on tutorials and code by Tomaga
 https://github.com/tomaga-dev/DriftCarG4/tree/main
@@ -16,6 +18,12 @@ Wagon from "3TD Starter Pack #1" by Ron Kapaun/3TD Studios
 https://opengameart.org/content/3td-starter-pack-1
 License: CC0
 
+"Desert Rock" by floatvoid
+https://opengameart.org/content/desert-rock
+License: CC0
+Modifications: Used textures from Polyhaven instead of those
+provided with the mesh asset.
+
 Terrain textures from Polyhaven
 License: CC0
 
@@ -27,9 +35,32 @@ License: CC0
 https://opengameart.org/content/car-engine-loop-96khz-4s/
 License: CC-BY 3.0
 
+"Saguaro Cactus Model" by BJZilberman
+https://opengameart.org/content/saguaro-cactus-model
+License: CC-BY 3.0
+Modifications: Separating arms from cactus to be able to
+randomize the number of arms, splitting into different
+height meshes.
+
+"Tiny weeds 3" by Yughues
+https://opengameart.org/content/tiny-weeds-3
+License: CC0
+Modifications: Painted mesh with vertex paint for wind.
+
 Sound Effect by freesound_community from Pixabay
 https://pixabay.com/sound-effects/film-special-effects-wheels-96829/
-License: Pixabay
+License: Pixabay (see end of file for language of their license)
+
+Other tools and libraries used in demo scene:
+	
+Terrain3D
+License: MIT
+Copyright (c) 2025 Cory Petkovsek, Roope Palmroos, and Contributors.
+
+Sky3D
+License: MIT
+Copyright (c) 2023-2025 Cory Petkovsek and Contributors
+Copyright (c) 2021 J. Cuéllar
 
 Pixabay license page states:
 What are you allowed to do with Content?

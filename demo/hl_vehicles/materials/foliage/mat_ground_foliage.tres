@@ -1,0 +1,98 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c0x0f4dqu3gwo"]
+
+[ext_resource type="Shader" uid="uid://b7oukr6y2umlt" path="res://addons/hl_materials/shaders/universal_material_shader.tres" id="1_8itsk"]
+[ext_resource type="Texture2D" uid="uid://breoupjogdexl" path="res://demo/hl_vehicles/materials/foliage/ground_foliage_diff.png" id="2_wawxe"]
+[ext_resource type="Texture2D" uid="uid://ctvujgxk0r02n" path="res://demo/hl_vehicles/materials/foliage/ground_foliage_normal.png" id="3_cw0gs"]
+[ext_resource type="Texture2D" uid="uid://chv4jgqyqjnf1" path="res://addons/hl_materials/assets/noise/wind_noise.tres" id="3_nxfr0"]
+[ext_resource type="Texture2D" uid="uid://ctncgy30khrga" path="res://demo/hl_vehicles/materials/foliage/ground_foliage_roughness.png" id="4_dgax3"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_8itsk")
+shader_parameter/texture_uv_scale = 1.0
+shader_parameter/texture_trim_top = 0.0
+shader_parameter/triplanar_enabled = false
+shader_parameter/uv1_blend_sharpness = 100.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/alpha_enabled = true
+shader_parameter/alpha_threshold = 0.25200001197
+shader_parameter/albedo_enabled = true
+shader_parameter/albedo_texture = ExtResource("2_wawxe")
+shader_parameter/albedo_use_nearest = false
+shader_parameter/albedo_color = Color(0.98615855, 0.8837226, 0.8612414, 1)
+shader_parameter/ormh_texture = ExtResource("4_dgax3")
+shader_parameter/ormh_use_nearest = false
+shader_parameter/ao_enabled = true
+shader_parameter/ao_strength = 1.0
+shader_parameter/roughness_enabled = true
+shader_parameter/roughness_strength = 1.0
+shader_parameter/metallic_enabled = false
+shader_parameter/metallic_strength = 1.0
+shader_parameter/height_enabled = false
+shader_parameter/height_strength = 1.0
+shader_parameter/normal_enabled = true
+shader_parameter/force_front_normals = false
+shader_parameter/use_spherical_normals = false
+shader_parameter/normal_texture = ExtResource("3_cw0gs")
+shader_parameter/normal_use_nearest = false
+shader_parameter/normal_strength = 1.0
+shader_parameter/secondary_texture_enabled = false
+shader_parameter/secondary_texture_triplanar = false
+shader_parameter/secondary_texture_scale = 5.0
+shader_parameter/secondary_texture_rotation = 0.0
+shader_parameter/secondary_texture_offset = Vector3(0, 0, 0)
+shader_parameter/secondary_texture_distance = 50.0
+shader_parameter/secondary_use_nearest = false
+shader_parameter/secondary_albedo_enabled = false
+shader_parameter/secondary_albedo_strength = 1.0
+shader_parameter/secondary_albedo_color = Color(1, 1, 1, 1)
+shader_parameter/secondary_ao_enabled = false
+shader_parameter/secondary_ao_strength = 1.0
+shader_parameter/secondary_roughness_enabled = false
+shader_parameter/secondary_roughness_strength = 1.0
+shader_parameter/secondary_metallic_enabled = false
+shader_parameter/secondary_metallic_strength = 1.0
+shader_parameter/secondary_height_enabled = false
+shader_parameter/secondary_height_strength = 2.5
+shader_parameter/secondary_normal_enabled = false
+shader_parameter/secondary_normal_strength = 1.0
+shader_parameter/secondary_normal_blend_amount = 0.75
+shader_parameter/secondary_normal_add_amount = 0.0
+shader_parameter/projected_texture_enabled = false
+shader_parameter/projected_texture_scale = 1.0
+shader_parameter/projected_texture_rotation = 0.0
+shader_parameter/projected_texture_distance = 50.0
+shader_parameter/projected_use_nearest = false
+shader_parameter/projected_albedo_enabled = true
+shader_parameter/projected_layer_max_angle = 5.0
+shader_parameter/projected_albedo_color = Color(1, 1, 1, 1)
+shader_parameter/projected_ao_enabled = false
+shader_parameter/projected_ao_strength = 1.0
+shader_parameter/projected_roughness_enabled = false
+shader_parameter/projected_roughness_strength = 1.0
+shader_parameter/projected_metallic_enabled = false
+shader_parameter/projected_metallic_strength = 1.0
+shader_parameter/projected_height_enabled = false
+shader_parameter/projected_height_strength = 1.0
+shader_parameter/projected_normal_enabled = false
+shader_parameter/projected_normal_strength = 1.0
+shader_parameter/projected_normal_blend_amount = 0.75
+shader_parameter/projected_noise_triplanar = false
+shader_parameter/projected_thickness = 1.0
+shader_parameter/projected_noise_amount = 1.0
+shader_parameter/wind_enabled = true
+shader_parameter/wind_direction_modifier = Vector3(1, 0.1, 0.1)
+shader_parameter/wind_amount = 0.77999998256544
+shader_parameter/wind_speed_modifer = 0.01999999955296
+shader_parameter/wind_noise_texture = ExtResource("3_nxfr0")
+shader_parameter/wind_noise_scale = 1.0
+shader_parameter/horizontal_sway_enabled = true
+shader_parameter/horizontal_sway_amount = 0.0499999988824
+shader_parameter/horizontal_sway_speed = 1.0
+shader_parameter/vertical_sway_enabled = false
+shader_parameter/vertical_sway_amount = 1.0
+shader_parameter/vertical_sway_speed = 1.0
+shader_parameter/sway_scale = 0.010000000475
