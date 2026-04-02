@@ -26,7 +26,7 @@ Example vehicle made with components showing independent suspension and axle sta
 
 <img width="474" height="348" alt="image" src="https://github.com/user-attachments/assets/195e4b22-bcb7-4a3e-bf3b-524eae3dd715" />
 
-This repo also include a material shader add-on we're using in one of our games. It's included here under MIT license as well.
+This repo also includes a material shader add-on we're using in one of our games. It's included here under MIT license as well.
 
 The shader includes two versions, one we call the Universal Material Shader and a limited version just called Blended and Projected Matererial.
 
