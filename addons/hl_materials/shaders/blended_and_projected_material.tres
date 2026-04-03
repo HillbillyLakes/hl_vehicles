@@ -6,7 +6,7 @@ Blended and Projected Material Shader
 */
 shader_type spatial;
 
-render_mode cull_disabled, depth_prepass_alpha, diffuse_lambert_wrap;
+render_mode cull_disabled, depth_prepass_alpha, diffuse_lambert_wrap, world_vertex_coords;
 
 #include \"res://addons/hl_materials/includes/groups/general.gdshaderinc\"
 #include \"res://addons/hl_materials/includes/groups/triplanar.gdshaderinc\"

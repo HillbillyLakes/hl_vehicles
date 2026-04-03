@@ -42,6 +42,12 @@ Modifications: Separating arms from cactus to be able to
 randomize the number of arms, splitting into different
 height meshes.
 
+"3 dead trees" by p0ss
+https://opengameart.org/content/3-dead-trees
+License: CC-BY 3.0
+Modifications: Painted vertex paint for wind, applied
+textures from Polyhaven.
+
 "Tiny weeds 3" by Yughues
 https://opengameart.org/content/tiny-weeds-3
 License: CC0

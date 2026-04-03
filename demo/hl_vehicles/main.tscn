@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://nslx8wymwn0" path="res://demo/hl_vehicles/controllers/menu_controller.gd" id="11_bblba"]
 [ext_resource type="Script" uid="uid://c3a0ky348t4p3" path="res://addons/hl_materials/src/wind_controller.gd" id="13_381w0"]
 [ext_resource type="PackedScene" uid="uid://vnxt05tr4wev" path="res://demo/hl_vehicles/terrain/foliage/ground_foliage.tscn" id="14_bxovf"]
+[ext_resource type="PackedScene" uid="uid://cejlu70aipk1r" path="res://demo/hl_vehicles/terrain/foliage/dead_tree_1.tscn" id="15_ow0sx"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_ycdy4"]
 use_debanding = false
@@ -61,124 +62,124 @@ script = ExtResource("3_bblba")
 metadata/_custom_type_script = "uid://dbndw8p05yam7"
 
 [node name="TallCactus1" parent="Terrain3D/Terrain3DObjects" unique_id=130044794 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.15085803, 0, -1.0933185, 0, 1.1036773, 0, 1.0933185, 0, 0.15085803, -312.63748, 9.500409, 1011.0284)
+transform = Transform3D(0.8046467, 0, 0.98250735, 0, 1.2699516, 0, -0.98250735, 0, 0.8046467, -312.63748, 9.500409, 1011.0284)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus12" parent="Terrain3D/Terrain3DObjects" unique_id=1390513564 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-1.3000597, 0, -0.27023348, 0, 1.3278483, 0, 0.27023348, 0, -1.3000597, -265.13623, 7.866798, 1007.18646)
+transform = Transform3D(0.9938122, 0, 0.8922205, 0, 1.3355598, 0, -0.8922205, 0, 0.9938122, -265.13623, 7.866798, 1007.18646)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus13" parent="Terrain3D/Terrain3DObjects" unique_id=842859164 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.48744357, 0, -1.1242537, 0, 1.2253766, 0, 1.1242537, 0, 0.48744357, -246.12805, 7.8667974, 996.4931)
+transform = Transform3D(0.9767108, 0, -0.8771146, 0, 1.312743, 0, 0.8771146, 0, 0.9767108, -246.12805, 7.8667974, 996.4931)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus14" parent="Terrain3D/Terrain3DObjects" unique_id=653875356 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.25172555, 0, -1.1192437, 0, 1.147202, 0, 1.1192437, 0, 0.25172555, -245.54018, 7.866798, 1020.05707)
+transform = Transform3D(0.9271498, 0, 0.8122793, 0, 1.2326412, 0, -0.8122793, 0, 0.9271498, -245.54018, 7.866798, 1020.05707)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus15" parent="Terrain3D/Terrain3DObjects" unique_id=1602281484 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(1.013902, 0, 0.6062781, 0, 1.1813426, 0, -0.6062781, 0, 1.013902, -262.1707, 7.866798, 1028.1833)
+transform = Transform3D(-0.54981846, 0, 1.2430897, 0, 1.3592544, 0, -1.2430897, 0, -0.54981846, -262.1707, 7.866798, 1028.1833)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus2" parent="Terrain3D/Terrain3DObjects" unique_id=10078570 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.6231256, 0, -0.7873326, 0, 1.0040808, 0, 0.7873326, 0, -0.6231256, -220.78085, 7.9824862, 886.45355)
+transform = Transform3D(1.1440979, 0, -0.2070945, 0, 1.16269, 0, 0.2070945, 0, 1.1440979, -220.78085, 7.9824862, 886.45355)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus3" parent="Terrain3D/Terrain3DObjects" unique_id=1350812703 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.9335841, 0, 0.64524287, 0, 1.1348646, 0, -0.64524287, 0, -0.9335841, -232.42767, 7.835659, 1007.42755)
+transform = Transform3D(0.23283257, 0, -1.0657303, 0, 1.0908676, 0, 1.0657303, 0, 0.23283257, -232.42767, 7.835659, 1007.42755)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus4" parent="Terrain3D/Terrain3DObjects" unique_id=1935722156 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.97954035, 0, 0.27542078, 0, 1.0175244, 0, -0.27542078, 0, 0.97954035, -338.42398, 10.576241, 950.6716)
+transform = Transform3D(1.2148029, 0, 0.49214208, 0, 1.3107059, 0, -0.49214208, 0, 1.2148029, -338.42398, 10.576241, 950.6716)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus5" parent="Terrain3D/Terrain3DObjects" unique_id=307141830 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.009864695, 0, -1.3382946, 0, 1.338331, 0, 1.3382946, 0, 0.009864695, -562.25793, 12.773527, 780.69415)
+transform = Transform3D(-0.18529058, 0, -1.2600089, 0, 1.27356, 0, 1.2600089, 0, -0.18529058, -562.25793, 12.773527, 780.69415)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus6" parent="Terrain3D/Terrain3DObjects" unique_id=727521379 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.28010625, 0, -1.0935625, 0, 1.128866, 0, 1.0935625, 0, 0.28010625, -607.98376, 12.232425, 387.4021)
+transform = Transform3D(1.1641966, 0, -0.36740425, 0, 1.2207947, 0, 0.36740425, 0, 1.1641966, -607.98376, 12.232425, 387.4021)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus7" parent="Terrain3D/Terrain3DObjects" unique_id=628283886 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.38794547, 0, 1.2093937, 0, 1.2700925, 0, -1.2093937, 0, -0.38794547, -15.646362, 6.2247143, 657.484)
+transform = Transform3D(1.2405796, 0, -0.38740262, 0, 1.2996609, 0, 0.38740262, 0, 1.2405796, -15.646362, 6.2247143, 657.484)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus8" parent="Terrain3D/Terrain3DObjects" unique_id=1477995783 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.98127985, 0, 0.90822405, 0, 1.3370793, 0, -0.90822405, 0, -0.98127985, 11.503433, 6.278597, 941.5108)
+transform = Transform3D(1.1907629, 0, -0.28618485, 0, 1.2246705, 0, 0.28618485, 0, 1.1907629, 11.503433, 6.278597, 941.5108)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus9" parent="Terrain3D/Terrain3DObjects" unique_id=1442609515 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.40752602, 0, -1.0357895, 0, 1.1130756, 0, 1.0357895, 0, -0.40752602, -300.3169, 11.356724, 1186.2813)
+transform = Transform3D(0.09253278, 0, -1.2794181, 0, 1.2827599, 0, 1.2794181, 0, 0.09253278, -300.3169, 11.356724, 1186.2813)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus10" parent="Terrain3D/Terrain3DObjects" unique_id=1721915780 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.54973835, 0, -0.91563255, 0, 1.0679865, 0, 0.91563255, 0, 0.54973835, -97.612274, 10.266341, 1133.2589)
+transform = Transform3D(0.20428602, 0, -1.0898061, 0, 1.1087877, 0, 1.0898061, 0, 0.20428602, -97.612274, 10.266341, 1133.2589)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="TallCactus11" parent="Terrain3D/Terrain3DObjects" unique_id=2007841346 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-1.0633323, 0, -0.0064002373, 0, 1.0633516, 0, 0.0064002373, 0, -1.0633323, 275.5601, 6.6767483, 700.7885)
+transform = Transform3D(-0.8346249, 0, 0.6059636, 0, 1.0314022, 0, -0.6059636, 0, -0.8346249, 275.5601, 6.6767483, 700.7885)
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="MediumCactus1" parent="Terrain3D/Terrain3DObjects" unique_id=457657960 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.91709596, 0, -0.81299436, 0, 1.2255713, 0, 0.81299436, 0, -0.91709596, -234.06744, 7.814184, 964.0591)
+transform = Transform3D(1.0307912, 0, -0.13518927, 0, 1.0396185, 0, 0.13518927, 0, 1.0307912, -234.06744, 7.814184, 964.0591)
 size = 1
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="MediumCactus2" parent="Terrain3D/Terrain3DObjects" unique_id=1221893030 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(1.2256823, 0, 0.40689772, 0, 1.2914577, 0, -0.40689772, 0, 1.2256823, -298.65488, 9.231609, 893.99744)
+transform = Transform3D(-1.0048312, 0, -0.3361422, 0, 1.0595647, 0, 0.3361422, 0, -1.0048312, -298.65488, 9.231609, 893.99744)
 size = 1
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="MediumCactus3" parent="Terrain3D/Terrain3DObjects" unique_id=327793839 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.28005177, 0, 0.9711057, 0, 1.0106806, 0, -0.9711057, 0, 0.28005177, -65.47101, 6.2055445, 730.93494)
+transform = Transform3D(1.0969893, 0, -0.2892199, 0, 1.134475, 0, 0.2892199, 0, 1.0969893, -65.47101, 6.2055445, 730.93494)
 size = 1
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="MediumCactus4" parent="Terrain3D/Terrain3DObjects" unique_id=1851710322 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.9713584, 0, 0.69047076, 0, 1.1917579, 0, -0.69047076, 0, -0.9713584, -67.2513, 8.589862, 349.292)
+transform = Transform3D(0.9467847, 0, 0.8001193, 0, 1.2395935, 0, -0.8001193, 0, 0.9467847, -67.2513, 8.589862, 349.292)
 size = 1
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="ShortCactus1" parent="Terrain3D/Terrain3DObjects" unique_id=1006103030 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-1.1819954, 0, -0.050989933, 0, 1.1830947, 0, 0.050989933, 0, -1.1819954, -170.05568, 7.2216296, 924.2781)
+transform = Transform3D(-1.1240292, 0, -0.43473762, 0, 1.2051715, 0, 0.43473762, 0, -1.1240292, -170.05568, 7.2216296, 924.2781)
 size = 2
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="ShortCactus2" parent="Terrain3D/Terrain3DObjects" unique_id=2142516722 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(0.3082939, 0, 1.3097605, 0, 1.3455548, 0, -1.3097605, 0, 0.3082939, -335.07016, 8.481087, 511.5995)
+transform = Transform3D(0.4633917, 0, 1.0641536, 0, 1.1606699, 0, -1.0641536, 0, 0.4633917, -335.07016, 8.481087, 511.5995)
 size = 2
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="ShortCactus3" parent="Terrain3D/Terrain3DObjects" unique_id=1994740086 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.2878818, 0, -0.99952996, 0, 1.0401616, 0, 0.99952996, 0, -0.2878818, -146.17404, 8.702746, 124.69745)
+transform = Transform3D(-0.927012, 0, 0.55487615, 0, 1.0803883, 0, -0.55487615, 0, -0.927012, -146.17404, 8.702746, 124.69745)
 size = 2
 arm_amount = 0.7
 scale_max = 1.4
 
 [node name="ShortCactus4" parent="Terrain3D/Terrain3DObjects" unique_id=803130299 instance=ExtResource("10_ajbjx")]
-transform = Transform3D(-0.65936667, 0, 0.7855423, 0, 1.025593, 0, -0.7855423, 0, -0.65936667, -607.9372, 12.42334, 371.6142)
+transform = Transform3D(0.4034985, 0, -0.977552, 0, 1.0575533, 0, 0.977552, 0, 0.4034985, -607.9372, 12.42334, 371.6142)
 size = 2
 arm_amount = 0.7
 scale_max = 1.4
@@ -221,6 +222,12 @@ transform = Transform3D(0.93035436, 0, 0.96438634, 0, 1.3400002, 0, -0.96438634,
 
 [node name="GroundFoliage4" parent="Terrain3D/Terrain3DObjects" unique_id=1135832810 instance=ExtResource("14_bxovf")]
 transform = Transform3D(0.23519304, 0, 0.9719487, 0, 1, 0, -0.9719487, 0, 0.23519304, -245.66946, 7.9101467, 1020.50195)
+
+[node name="DeadTree1" parent="Terrain3D/Terrain3DObjects" unique_id=561455155 instance=ExtResource("15_ow0sx")]
+transform = Transform3D(0.7360294, 0, -5.9345307, 0, 5.98, 0, 5.9345307, 0, 0.7360294, -247.684, 7.897661, 1025.7567)
+
+[node name="DeadTree2" parent="Terrain3D/Terrain3DObjects" unique_id=1280306525 instance=ExtResource("15_ow0sx")]
+transform = Transform3D(4.8451505, 0, 3.5049844, 0, 5.9800005, 0, -3.5049844, 0, 4.8451505, -377.64587, 9.89291, 387.02658)
 
 [node name="Sky3D" type="WorldEnvironment" parent="." unique_id=553268641]
 environment = SubResource("Environment_vivmo")

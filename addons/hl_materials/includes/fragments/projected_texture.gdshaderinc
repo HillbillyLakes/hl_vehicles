@@ -28,7 +28,7 @@ if (projected_texture_enabled) {
 			noise = pl_noise_read.r * projected_noise_amount;
 		}
 
-		float _blend_ratio = (5.0 * blend_ratio * projected_thickness) - noise;
+		float _blend_ratio = (1.0 * blend_ratio * projected_thickness) - noise;
 		
 		if (pl_albedo_read.a > alpha_threshold) {
 			
