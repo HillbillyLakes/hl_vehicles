@@ -35,7 +35,7 @@ Features of the shader include:
 * Primary texture (triplanar or standard UV map)
 * Secondary texture blended into primary (i.e. using two low res textures at different scales if something needs to look good far away and reallllly up close)
 * Projected texture (applies a texture based on angle and mask, i.e. snow on top of a boulder)
-* Wind (noise, horizontal sway, and horizontal sway by using the RGB channels of vertex paint)
+* Wind (noise, horizontal sway, and vertical sway by using the RGB channels of vertex paint)
 
 <img width="397" height="464" alt="image" src="https://github.com/user-attachments/assets/734de226-876f-4b6b-bf67-028c3572761b" />
 
